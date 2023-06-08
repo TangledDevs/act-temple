@@ -1,7 +1,7 @@
 import aboutImage from "../assets/aboutImage.png";
 const About = () => {
   return (
-    <div className="flex flex-col-reverse mt-4 md:grid md:grid-cols-2 items-center">
+    <div className="flex flex-col-reverse mt-4 lg:grid lg:grid-cols-2 items-center">
       {/* image div */}
       <div className="p-8">
         <img src={aboutImage} alt="aboutImage" className="w-full md:scale-90" />
