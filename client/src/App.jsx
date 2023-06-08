@@ -1,8 +1,13 @@
+import About from "./components/About"
+import Header from "./components/Header"
+import Hero from "./components/Hero"
 function App() {
 
   return (
     <>
-      <h1 className='text-center bg-orange-300'>Amma Charitable Trust - Temple</h1>
+      <Header/>
+      <Hero/>
+      <About/>
     </>
   )
 }
