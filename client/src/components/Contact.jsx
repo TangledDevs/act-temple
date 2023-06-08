@@ -1,18 +1,28 @@
-import { MdLocationPin } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
+import {FaPhoneAlt} from "react-icons/fa"
+import {GrMail} from "react-icons/gr"
 const Contact = () => {
   return (
-    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center">
+    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-10">
       {/* contact info div */}
-      <div className="flex justify-center items-center flex-col">
-        <h2 className="text-center">Contact</h2>
+      <div className="flex justify-start flex-col gap-6">
+        <h2 className="text-red-800 font-bold text-4xl text-center">Contact</h2>
         {/* Address */}
         <div className="flex gap-4">
-          <MdLocationPin size={30} />
+          <IoLocationSharp className="text-5xl"/>
           <p>
             Sri Durga Malleswara Swamy Varla Devasthanam, Indrakeeladri,
             Kanakadurga Nagar, Mallikarjunapeta, Vijayawada - 520 001. Krishna
             District. Andhra Pradesh. India.
           </p>
+        </div>
+        <div className="flex gap-4 items-center ">
+          <FaPhoneAlt className="text-2xl ml-2"/>
+          <p>+91 8887776665</p>
+        </div>
+        <div className="flex gap-4 items-center ">
+          <GrMail className="text-2xl ml-2"/>
+          <p>testmail@gmail.com</p>
         </div>
       </div>
       {/* google maps div */}
