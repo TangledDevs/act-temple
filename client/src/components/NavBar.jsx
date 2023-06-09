@@ -36,7 +36,7 @@ const NavBar = () => {
         <GiHamburgerMenu className="text-slate-100" />
       </div>
       {showMenu && (
-        <div className="absolute right-0 top-14 w-full">
+        <div className="absolute right-0 top-14 w-full z-10">
           <ul className="flex flex-col justify-end  items-center bg-white lg:hidden p-4 mt-4 ">
             <li className="my-3 cursor-pointer px-4  flex" onClick={handleMenu}>
               <a href="#home" className="font-bold">Home</a>
