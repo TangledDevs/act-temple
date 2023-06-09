@@ -5,12 +5,12 @@ const Footer = () => {
     <div>
       <footer className="w-full bg-black text-white font-semibold p-4">
         {/* Social Media handles */}
-        <div className="flex sm:flex-col items-center md:flex-row justify-between p-4">
+        <div className="flex flex-col items-center md:flex-row justify-between p-4 gap-4">
           <div>
             <p className="text-gray-500 text-sm mb-2">
               Connect with us on social media
             </p>
-            <div className="flex">
+            <div className="flex justify-between mt-2">
               <a
                 href="www.google.com"
                 target="_blank"
@@ -40,12 +40,13 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
           <div>
             <p>&#169; {new Date().getFullYear()} All rights Reserved</p>
           </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <p>Made with love by Tangled Devs</p>
+          <div className="">
+            <p>Made with ❤️ by Tangled Devs</p>
+          </div>
         </div>
       </footer>
     </div>

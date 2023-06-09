@@ -3,7 +3,7 @@ import {FaPhoneAlt} from "react-icons/fa"
 import {GrMail} from "react-icons/gr"
 const Contact = () => {
   return (
-    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-10">
+    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-4 md:px-10">
       {/* contact info div */}
       <div className="flex justify-start flex-col gap-6">
         <h2 className="text-red-800 font-bold text-4xl text-center">Contact</h2>
