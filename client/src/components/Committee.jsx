@@ -6,10 +6,10 @@ const Committee = () => {
       <h2 className="text-red-800 font-bold text-4xl text-center">
         Temple Committee
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 md:justify-between w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 md:justify-between w-full mt-4">
         {members.map((member, index) => {
           return (
-            <div key={index} className="p-3 bg-slate-50 rounded-md hover:scale-105  duration-500">
+            <div key={index} className="p-3 bg-slate-100 rounded-md hover:scale-105  duration-500">
               {/* Image div */}
               <div className="flex justify-center">
                 <img src={member.image} alt={member.name} className="w-52 h-52 rounded-full" />

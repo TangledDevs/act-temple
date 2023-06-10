@@ -5,7 +5,7 @@ import image4 from "../assets/image4.png"
 const images = [image1,image2,image3,image4,image1,image2,image3,image4];
 const Gallery = () => {
   return (
-    <div className="p-4 md:p-10">
+    <div className="p-4 md:p-10" id="gallery">
       <h2 className="text-red-800 font-bold text-4xl text-center">Gallery</h2>
       {/* Images */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 mt-4">

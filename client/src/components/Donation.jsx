@@ -1,6 +1,10 @@
 const Donation = () => {
   return (
-    <div>Donation</div>
+    <div>
+      <div>
+        
+      </div>
+    </div>
   )
 }
 

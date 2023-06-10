@@ -3,14 +3,14 @@ import {FaPhoneAlt} from "react-icons/fa"
 import {GrMail} from "react-icons/gr"
 const Contact = () => {
   return (
-    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-4 md:px-10">
+    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-4 md:px-10" id="contact">
       {/* contact info div */}
       <div className="flex justify-start flex-col gap-6">
         <h2 className="text-red-800 font-bold text-4xl text-center">Contact</h2>
         {/* Address */}
-        <div className="flex gap-4">
-          <IoLocationSharp className="text-5xl"/>
-          <p>
+        <div className="">
+          <IoLocationSharp className="text-2xl inline-block mr-2"/>
+          <p className="inline">
             Sri Durga Malleswara Swamy Varla Devasthanam, Indrakeeladri,
             Kanakadurga Nagar, Mallikarjunapeta, Vijayawada - 520 001. Krishna
             District. Andhra Pradesh. India.
