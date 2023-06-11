@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Committee from "./components/Committee";
 import Contact from "./components/Contact";
+import Donation from "./components/Donation";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Gallery/>
       <Committee />
+      <Donation/>
       <Contact />
       <Footer />
     </div>
