@@ -21,7 +21,7 @@ const responsive = {
 };
 const Hero = () => {
   return (
-    <div className="p-4 md:p-10">
+    <div className="p-4 md:p-10 w-full h-full">
       <Carousel
         swipeable={true}
         draggable={false}
