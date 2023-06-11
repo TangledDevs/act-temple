@@ -1,7 +1,7 @@
 import aboutImage from "../assets/aboutImage.png";
 const About = () => {
   return (
-    <div className="flex flex-col-reverse mt-4 lg:grid lg:grid-cols-2 items-center" id="about">
+    <div className="flex flex-col-reverse mt-8 md:mt-4 lg:grid lg:grid-cols-2 items-center" id="about">
       {/* image div */}
       <div className="p-8">
         <img src={aboutImage} alt="aboutImage" className="w-full md:scale-90" />
@@ -18,12 +18,7 @@ const About = () => {
         architecto sunt ipsa labore blanditiis assumenda molestiae possimus nemo
        
         </p>
-        <p className="px-8 py-4 md:text-lg text-center">
-        aspernatur ad possimus asperiores, culpa, quis repellendus dicta magnam
-        dignissimos amet! Est, illo culpa explicabo cum omnis necessitatibus at
-        nihil similique in ducimus eos eveniet quo, reprehenderit magnam eum
-        blanditiis ipsa esse? Culpa quae dolorum alias, doloremque voluptatum
-        </p>
+        
       </div>
     </div>
   );

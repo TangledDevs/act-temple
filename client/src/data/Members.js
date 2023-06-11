@@ -27,45 +27,23 @@ export const members = [
     position : "Chairman",
     contact : "+91 1122334455",
     address : "Guntur,Andhra Pradesh"
-  },{
-    image : member4,
+  },
+  {
+    image : member1,
     name : "Kiran Kumar",
     position : "Chairman",
     contact : "+91 1122334455",
     address : "Guntur,Andhra Pradesh"
   },
   {
-    image : member4,
+    image : member2,
     name : "Kiran Kumar",
     position : "Chairman",
     contact : "+91 1122334455",
     address : "Guntur,Andhra Pradesh"
-  },{
-    image : member4,
-    name : "Kiran Kumar",
-    position : "Chairman",
-    contact : "+91 1122334455",
-    address : "Guntur,Andhra Pradesh"
-  },{
-    image : member4,
-    name : "Kiran Kumar",
-    position : "Chairman",
-    contact : "+91 1122334455",
-    address : "Guntur,Andhra Pradesh"
-  },{
-    image : member4,
-    name : "Kiran Kumar",
-    position : "Chairman",
-    contact : "+91 1122334455",
-    address : "Guntur,Andhra Pradesh"
-  },{
-    image : member4,
-    name : "Kiran Kumar",
-    position : "Chairman",
-    contact : "+91 1122334455",
-    address : "Guntur,Andhra Pradesh"
-  },{
-    image : member4,
+  },
+  {
+    image : member3,
     name : "Kiran Kumar",
     position : "Chairman",
     contact : "+91 1122334455",

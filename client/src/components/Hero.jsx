@@ -1,9 +1,5 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import image1 from "../assets/image1.png"
-import image2 from "../assets/image2.png"
-import image3 from "../assets/image3.png"
-import image4 from "../assets/image4.png"
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -44,17 +40,17 @@ const Hero = () => {
         itemClass="carousel-item-padding-40-px"
         
       >
-        <div className="lg:h-[70vh]">
-          <img src={image1} alt="image1" className="object-contain"/>
+        <div className="lg:h-[85vh]">
+          <img src={"hero/image1.png"} alt="image1" className="object-contain"/>
         </div>
-        <div className="lg:h-[70vh]">
-          <img src={image2} alt="image2"/>
+        <div className="lg:h-[85vh]">
+          <img src={"hero/image2.png"} alt="image2"/>
         </div>
-        <div className="lg:h-[70vh]">
-          <img src={image3} alt="image3"/>
+        <div className="lg:h-[85vh]">
+          <img src={"hero/image3.png"} alt="image3"/>
         </div>
-        <div className="lg:h-[70vh]">
-          <img src={image4} alt="image4"/>
+        <div className="lg:h-[85vh]">
+          <img src={"hero/image4.png"} alt="image4"/>
         </div>
         
       </Carousel>

@@ -18,11 +18,11 @@ const Contact = () => {
         </div>
         <div className="flex gap-4 items-center ">
           <FaPhoneAlt className="text-2xl ml-2"/>
-          <p>+91 8887776665</p>
+          <a href="tel:+918887776665">+91 8887776665</a>
         </div>
         <div className="flex gap-4 items-center ">
           <GrMail className="text-2xl ml-2"/>
-          <p>testmail@gmail.com</p>
+          <a href="mailto:testmail@gmail.com">testmail@gmail.com</a>
         </div>
       </div>
       {/* google maps div */}
