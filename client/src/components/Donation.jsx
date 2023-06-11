@@ -1,9 +1,5 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import image1 from "../assets/image1.png";
-import image2 from "../assets/image2.png";
-import image3 from "../assets/image3.png";
-import image4 from "../assets/image4.png";
 import { BsFillCircleFill } from "react-icons/bs";
 const responsive = {
   superLargeDesktop: {
@@ -26,9 +22,9 @@ const responsive = {
 };
 const Donation = () => {
   return (
-    <div className="mt-4 lg:grid lg:grid-cols-2 items-center" id="about">
+    <div className="mt-4 lg:grid lg:grid-cols-2 items-center" id="donations">
       {/* image div */}
-      <div className="p-4 md:p-10">
+      <div className="p-6 md:p-10">
         <Carousel
           swipeable={true}
           draggable={false}
@@ -44,19 +40,21 @@ const Donation = () => {
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
           dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          itemClass="carousel-item-padding-30-px"
+          
         >
-          <div className="lg:h-[60vh]">
-            <img src={image1} alt="image1" className="object-contain" />
+          
+          <div className="flex justify-center">
+            <img src={"donation/image1.png"} alt="image1" className="object-fill"/>
           </div>
-          <div className="lg:h-[60vh]">
-            <img src={image2} alt="image2" />
+          <div className="flex justify-center">
+            <img src={"donation/image2.png"} alt="image2" className="object-fill" />
           </div>
-          <div className="lg:h-[60vh]">
-            <img src={image3} alt="image3" />
+          <div className="flex justify-center">
+            <img src={"donation/image3.png"} alt="image3" className="object-fill"/>
           </div>
-          <div className="lg:h-[60vh]">
-            <img src={image4} alt="image4" />
+          <div className="flex justify-center">
+            <img src={"donation/image4.png"} alt="image4" className="object-fill" />
           </div>
         </Carousel>
       </div>
