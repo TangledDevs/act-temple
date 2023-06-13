@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
-import {AiOutlineClose} from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+import { Link as RouterLink} from "react-router-dom"
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const handleMenu = () => {
@@ -11,8 +11,8 @@ const NavBar = () => {
   return (
     <div className="bg-orange-400 px-2 md:px-8 flex justify-between items-center">
       {/* left side - logo */}
-      <div className="cursor-pointer">
-        <img src={logo} alt="temple logo" className="w-64 md:w-80" />
+      <div className="cursor-pointer flex items-center">
+      <RouterLink to={"/"} className="text-white font-bold p-6 text-2xl">కోటిలింగాల ఆలయం</RouterLink>
       </div>
       <nav className="hidden md:block">
         <ul className="flex md:gap-6 lg:gap-10 md:pr-4 lg:pr-8">
@@ -62,7 +62,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={500}
+              duration={700}
               className="font-bold cursor-pointer"
             >
               Donations
@@ -75,7 +75,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={500}
+              duration={800}
               className="font-bold cursor-pointer"
             >
               Contact
@@ -84,7 +84,11 @@ const NavBar = () => {
         </ul>
       </nav>
       <div onClick={handleMenu} className="text-3xl cursor-pointer md:hidden">
-        {showMenu ?     <AiOutlineClose className="text-slate-100 font-bold"/> : <GiHamburgerMenu className="text-slate-100" />} 
+        {showMenu ? (
+          <AiOutlineClose className="text-slate-100 font-bold" />
+        ) : (
+          <GiHamburgerMenu className="text-slate-100" />
+        )}
       </div>
       {showMenu && (
         <div className="absolute right-0 top-12 w-full z-10">

@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { BsFillCircleFill } from "react-icons/bs";
-
+import { Link as RouterLink} from "react-router-dom"
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -64,34 +64,36 @@ const Donation = () => {
           Help us continue our mission of serving the community and fostering spiritual growth. Your donations make a difference in maintaining the temple, organizing events, and supporting charitable initiatives.
         </p>
         <ul className="flex justify-center flex-col mx-10 my-4">
-          <li className="mt-2 flex items-center">
+          <li className="mt-2  items-center">
             <BsFillCircleFill className="inline mr-2" size={14} />
             Maintain the temple premises.
           </li>
-          <li className="mt-2 flex items-center">
+          <li className="mt-2  items-center">
             <BsFillCircleFill className="inline mr-2" size={14}/>
             Organize religious ceremonies and festivals.
           </li>
-          <li className="mt-2 flex items-center">
+          <li className="mt-2  items-center">
             <BsFillCircleFill className="inline mr-2" size={14}/>
             Offer educational programs for spiritual growth.
           </li>
-          <li className="mt-2 flex items-center">
+          <li className="mt-2  items-center">
             <BsFillCircleFill className="inline mr-2" size={14} />
             Support community outreach initiatives.
           </li>
-          <li className="mt-2 flex items-center">
+          <li className="mt-2  items-center">
             <BsFillCircleFill className="inline mr-2" size={14} />
             Enhance the temple experience.
           </li>
         </ul>
         <div className="flex items-center justify-center">
+          <RouterLink to={"/donation"}>
           <button
             type="button"
             className="bg-orange-500 text-white font-bold p-3 rounded-md w-32"
           >
             Donate Now
           </button>
+          </RouterLink>
         </div>
       </div>
     </div>
