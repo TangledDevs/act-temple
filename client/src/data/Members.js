@@ -29,21 +29,21 @@ export const members = [
     address : "Guntur,Andhra Pradesh"
   },
   {
-    image : member1,
+    image : member4,
     name : "Kiran Kumar",
     position : "Chairman",
     contact : "+91 1122334455",
     address : "Guntur,Andhra Pradesh"
   },
   {
-    image : member2,
+    image : member5,
     name : "Kiran Kumar",
     position : "Chairman",
     contact : "+91 1122334455",
     address : "Guntur,Andhra Pradesh"
   },
   {
-    image : member3,
+    image : member6,
     name : "Kiran Kumar",
     position : "Chairman",
     contact : "+91 1122334455",

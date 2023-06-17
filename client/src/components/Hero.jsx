@@ -38,19 +38,18 @@ const Hero = () => {
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
-        
       >
-        <div className="lg:h-[85vh]">
-          <img src={"hero/image1.png"} alt="image1" className="object-contain"/>
+        <div className="w-screen">
+          <img src={"hero/hero1.jpg"} alt="image1" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
         </div>
-        <div className="lg:h-[85vh]">
-          <img src={"hero/image2.png"} alt="image2"/>
+        <div className="w-screen">
+          <img src={"hero/hero2.jpg"} alt="image2" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
         </div>
-        <div className="lg:h-[85vh]">
-          <img src={"hero/image3.png"} alt="image3"/>
+        <div className="w-screen">
+          <img src={"hero/hero3.jpg"} alt="image3" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
         </div>
-        <div className="lg:h-[85vh]">
-          <img src={"hero/image4.png"} alt="image4"/>
+        <div className="w-screen">
+          <img src={"hero/hero4.jpg"} alt="image4" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
         </div>
         
       </Carousel>

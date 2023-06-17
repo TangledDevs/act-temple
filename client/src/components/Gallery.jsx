@@ -1,4 +1,5 @@
-const images = ["gallery/image1.png","gallery/image2.png","gallery/image3.png","gallery/image4.png","gallery/image5.png","gallery/image6.png","gallery/image7.png","gallery/image8.png"];
+const images = ["gallery/gallery17.jpg","gallery/gallery18.jpg","gallery/gallery3.jpg","gallery/gallery6.jpg","gallery/gallery7.jpg","gallery/gallery8.jpg",
+"gallery/gallery9.jpg","gallery/gallery10.jpg","gallery/gallery11.jpg","gallery/gallery12.jpg","gallery/gallery13.jpg","gallery/gallery14.jpg"]
 const Gallery = () => {
   return (
     <div className="p-4 md:p-10" id="gallery">
@@ -8,7 +9,7 @@ const Gallery = () => {
         {
           images.map((image,index)=>{
             return (
-                <img src={image} className="w-full" key={index}/>
+                <img src={image} className="w-96 h-64" key={index}/>
             )
           })
         }

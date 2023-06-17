@@ -12,7 +12,7 @@ const Footer = () => {
             </p>
             <div className="flex justify-between mt-2">
               <a
-                href="www.google.com"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 className="mr-4"
@@ -20,7 +20,7 @@ const Footer = () => {
                 <BsWhatsapp className="text-3xl cursor-pointer" />
               </a>
               <a
-                href="www.google.com"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 className="mr-4"
@@ -28,14 +28,14 @@ const Footer = () => {
                 <FaInstagram className="text-3xl cursor-pointer" />
               </a>
               <a
-                href="www.google.com"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
                 className="mr-4"
               >
                 <BsYoutube className="text-3xl cursor-pointer" />
               </a>
-              <a href="www.google.com" target="_blank" rel="noreferrer">
+              <a href="/" target="_blank" rel="noreferrer">
                 <FaFacebookF className="text-3xl cursor-pointer" />
               </a>
             </div>

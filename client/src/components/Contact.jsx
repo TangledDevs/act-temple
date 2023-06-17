@@ -3,37 +3,40 @@ import {FaPhoneAlt} from "react-icons/fa"
 import {GrMail} from "react-icons/gr"
 const Contact = () => {
   return (
-    <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-4 md:px-10 gap-6" id="contact">
+    <div
+      className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-4 md:px-10 gap-6"
+      id="contact"
+    >
       {/* contact info div */}
       <div className="flex justify-start flex-col gap-6">
         <h2 className="text-red-800 font-bold text-4xl text-center">Contact</h2>
         {/* Address */}
-        <div className="justify-center items-center">
-          <IoLocationSharp className="text-2xl inline-block mr-2"/>
-          <p className="inline">
-            Sri Durga Malleswara Swamy Varla Devasthanam, Indrakeeladri,
-            Kanakadurga Nagar, Mallikarjunapeta, Vijayawada - 520 001. Krishna
-            District. Andhra Pradesh. India.
+        <div className=" flex gap-2">
+          <IoLocationSharp className="text-7xl inline-block  ml-1 md:text-5xl" />
+          <p className="inline text-lg">
+            Koti Lingala Sri MahaKali Sahitha Sri Maha Kaleswara Swamy Vari
+            Devasthanam, VemaVaram , PhirangiPuram Mandal , Guntur District ,
+            Andhra Pradesh , India - 522529 .
           </p>
         </div>
         <div className="flex gap-4 items-center ">
-          <FaPhoneAlt className="text-2xl ml-2"/>
-          <a href="tel:+918887776665">+91 8887776665</a>
+          <FaPhoneAlt className="text-xl ml-2" />
+          <a href="tel:+919885185082" className="text-lg">+91 9885185082</a>
         </div>
         <div className="flex gap-4 items-center ">
-          <GrMail className="text-2xl ml-2"/>
-          <a href="mailto:testmail@gmail.com">testmail@gmail.com</a>
+          <GrMail className="text-2xl ml-2" />
+          <a href="mailto:testmail@gmail.com" className="text-lg">testmail@gmail.com</a>
         </div>
       </div>
       {/* google maps div */}
       <div className="p-4">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.585697799789!2d80.52192967480501!3d16.344099984375998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f5c460ab7d1d%3A0x8c86e4f36490336b!2sVasireddy%20Venkatadri%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1686209175692!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d732.9389827834713!2d80.22490937588287!3d16.293888021077137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a788f3e1a0963%3A0xaa9e0c574a7cc4a6!2sKotilingala%20Sri%20Sri%20Sri%20Mahakali%20Sahitha%20Mahakaleshwara%20Temple!5e0!3m2!1sen!2sin!4v1686988837590!5m2!1sen!2sin"
           className="w-full md:w-[90%] md:h-80 md:mx-auto"
           style={{ border: 0 }}
           allowfullscreen=""
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

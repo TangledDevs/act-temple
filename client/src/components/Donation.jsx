@@ -25,7 +25,7 @@ const Donation = () => {
   return (
     <div className="mt-4 lg:grid lg:grid-cols-2 items-center" id="donations">
       <div className="p-6 md:p-10">
-        <Carousel
+        {/* <Carousel
           swipeable
           draggable={false}
           showDots
@@ -54,26 +54,31 @@ const Donation = () => {
           <div className="flex justify-center">
             <img src={"donation/image4.png"} alt="image4" className="object-fill" />
           </div>
-        </Carousel>
+        </Carousel> */}
+        <div className="flex justify-center">
+          <video src="donation/temple.mp4" alt="image1" autoPlay={true} muted loop />
+        </div>
       </div>
       <div className="flex justify-center flex-col">
         <h2 className="text-red-800 font-bold text-4xl text-center">
           Donation
         </h2>
         <p className="px-8 py-4 md:text-lg text-center">
-          Help us continue our mission of serving the community and fostering spiritual growth. Your donations make a difference in maintaining the temple, organizing events, and supporting charitable initiatives.
+          Help us continue our mission of serving the community and fostering
+          spiritual growth. Your donations make a difference in maintaining the
+          temple, organizing events, and supporting charitable initiatives.
         </p>
-        <ul className="flex justify-center flex-col mx-10 my-4">
+        <ul className="flex justify-center flex-col mx-7 my-4 md:mx-10">
           <li className="mt-2  items-center">
             <BsFillCircleFill className="inline mr-2" size={14} />
             Maintain the temple premises.
           </li>
           <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14}/>
+            <BsFillCircleFill className="inline mr-2" size={14} />
             Organize religious ceremonies and festivals.
           </li>
           <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14}/>
+            <BsFillCircleFill className="inline mr-2" size={14} />
             Offer educational programs for spiritual growth.
           </li>
           <li className="mt-2  items-center">
@@ -87,12 +92,12 @@ const Donation = () => {
         </ul>
         <div className="flex items-center justify-center">
           <RouterLink to={"/donation"}>
-          <button
-            type="button"
-            className="bg-orange-500 text-white font-bold p-3 rounded-md w-32"
-          >
-            Donate Now
-          </button>
+            <button
+              type="button"
+              className="bg-orange-500 text-white font-bold p-3 rounded-md w-32"
+            >
+              Donate Now
+            </button>
           </RouterLink>
         </div>
       </div>
