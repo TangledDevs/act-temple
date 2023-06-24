@@ -1,29 +1,29 @@
 import { members } from "../data/Members";
 
-const Committee = () => {
+const Committee = ({language}) => {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center p-4 md:p-10">
+    <div className="p-4 md:p-10">
       <h2 className="text-red-800 font-bold text-4xl text-center">
-        Temple Committee
+      {language==="Telugu" ? "ఆలయ కమిటీ":"Temple Committee"}
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:justify-between w-full mt-4">
-        {members.map((member, index) => {
-          return (
-            <div key={index} className="p-2 bg-slate-100 rounded-md hover:scale-105  duration-500 flex gap-8 justify-center items-center h-full w-full">
-              {/* Image div */}
-              <div className="flex justify-center items-center">
-                <img src={member.image} alt={member.name} className="w-20 h-20 rounded-full" />
-              </div>
-              {/* Details div */}
-              <div className="flex flex-col justify-center">
-                <p>{member.name}</p>
-                <p>{member.position}</p>
-                <p>{member.contact}</p>
-                <p>{member.address}</p>
-              </div>
-            </div>
-          );
-        })}
+      <div className="p-2 py-8 grid grid-cols-2 justify-center items-center rounded-md h-full">
+        {/* Image div */}
+        <div className="m-auto w-1/2">
+          <img src={members[0].image} alt={members[0].name} className="w-full h-full rounded-full" />
+        </div>
+        {/* Details div */}
+        {language === "Telugu" ? <div className="flex flex-col text-3xl gap-4 justify-center">
+          <p>కిరణ్ కుమార్</p>
+          <p>చైర్మన్</p>
+          <p>+91 1122334455</p>
+          <p>గుంటూరు, ఆంధ్రప్రదేశ్</p>
+        </div> : <div className="flex flex-col text-3xl gap-4 justify-center">
+          <p>{members[0].name}</p>
+          <p>{members[0].position}</p>
+          <p>{members[0].contact}</p>
+          <p>{members[0].address}</p>
+        </div>}
+        
       </div>
     </div>
   );

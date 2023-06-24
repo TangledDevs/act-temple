@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../components/Header'
 import About from "../components/About"
 import Gallery from "../components/Gallery"
@@ -8,15 +8,17 @@ import Donation from "../components/Donation"
 import Contact from "../components/Contact"
 import Footer from '../components/Footer'
 const Home = () => {
+  const [language, setLanguage] = useState('Telugu')
+  const handleLanguageChange = (lang) => setLanguage(lang);
   return (
     <div>
-      <Header />
+      <Header language={language} changeLanguage={handleLanguageChange} />
       <Hero />
-      <About />
-      <Donation/>
-      <Gallery/>
-      <Committee />
-      <Contact />
+      <About language={language} />
+      <Donation language={language}/>
+      <Gallery language={language}/>
+      <Committee language={language}/>
+      <Contact language={language}/>
       <Footer />
     </div>
   )

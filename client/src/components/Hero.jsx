@@ -40,16 +40,16 @@ const Hero = () => {
         itemClass="carousel-item-padding-40-px"
       >
         <div className="w-screen">
-          <img src={"hero/hero1.jpg"} alt="image1" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
+          <img src={"hero/hero1.jpg"} alt="image1" className="object-center  h-[30vh] md:h-[75vh] w-screen"/>
         </div>
         <div className="w-screen">
-          <img src={"hero/hero2.jpg"} alt="image2" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
+          <img src={"hero/hero2.jpg"} alt="image2" className="object-center  h-[30vh] md:h-[75vh] w-screen"/>
         </div>
         <div className="w-screen">
-          <img src={"hero/hero3.jpg"} alt="image3" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
+          <img src={"hero/hero3.jpg"} alt="image3" className="object-center  h-[30vh] md:h-[75vh] w-screen"/>
         </div>
         <div className="w-screen">
-          <img src={"hero/hero4.jpg"} alt="image4" className="object-fill  h-[50vh] md:h-[75vh] w-screen"/>
+          <img src={"hero/hero4.jpg"} alt="image4" className="object-center  h-[30vh] md:h-[75vh] w-screen"/>
         </div>
         
       </Carousel>

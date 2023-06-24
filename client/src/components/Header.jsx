@@ -1,9 +1,9 @@
 import NavBar from "./NavBar"
 
-const Header = () => {
+const Header = ({language, changeLanguage}) => {
   return (
     <div className="static">
-      <NavBar/>
+      <NavBar language={language} changeLanguage={changeLanguage} />
     </div>
   )
 }
