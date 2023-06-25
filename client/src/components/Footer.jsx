@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { BsWhatsapp, BsYoutube } from "react-icons/bs";
 const Footer = () => {
   return (
-    <div>
+    <div className="mt-4">
       <footer className="w-full bg-black text-white font-semibold p-4">
         {/* Social Media handles */}
         <div className="flex flex-col items-center md:flex-row justify-between p-4 gap-4">

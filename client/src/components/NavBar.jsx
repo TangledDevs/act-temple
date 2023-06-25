@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 
+// eslint-disable-next-line react/prop-types
 const NavBar = ({language, changeLanguage}) => {
   const [showMenu, setShowMenu] = useState(false);
   const handleMenu = () => {
@@ -23,10 +24,10 @@ const NavBar = ({language, changeLanguage}) => {
           {language==='Telugu'? "కోటిలింగాల ఆలయం": "Kotilingaala Temple"}
         </span>
       </div>
-      <div className="ml-auto md:mr-6">
-        <select name="language" id="language" className="cursor-pointer bg-orange-400 p-2 font-semibold text-lg rounded-lg text-white focus:outline-0" onChange={handleLanguage}>
-          <option value="Telugu">తెలుగు</option>
-          <option value="English">English</option>
+      <div className="ml-auto mr-4">
+        <select name="language" id="language" className="cursor-pointer bg-white text-black p-2 font-medium text-lg rounded-lg focus:outline-0" onChange={handleLanguage}>
+          <option value="Telugu" className="cursor-pointer">తెలుగు</option>
+          <option value="English" className="cursor-pointer">English</option>
         </select>
       </div>
       <nav className="hidden md:block">
@@ -39,7 +40,7 @@ const NavBar = ({language, changeLanguage}) => {
               smooth={true}
               offset={50}
               duration={500}
-              className="font-bold cursor-pointer"
+              className="font-semibold cursor-pointer"
             >
               {language==="Telugu" ? "హోమ్":"Home"}
             </Link>
@@ -52,7 +53,7 @@ const NavBar = ({language, changeLanguage}) => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="font-bold cursor-pointer"
+              className="font-semibold cursor-pointer"
             >
               {language==="Telugu" ? "అబౌట్":"About"}
             </Link>
@@ -65,7 +66,7 @@ const NavBar = ({language, changeLanguage}) => {
               smooth={true}
               offset={-100}
               duration={700}
-              className="font-bold cursor-pointer"
+              className="font-semibold cursor-pointer"
             >
               {language==="Telugu" ? "విరాళాలు":"Donations"}
             </Link>
@@ -78,7 +79,7 @@ const NavBar = ({language, changeLanguage}) => {
               smooth={true}
               offset={-100}
               duration={500}
-              className="font-bold cursor-pointer"
+              className="font-semibold cursor-pointer"
             >
               {language==="Telugu" ? "గ్యాలరీ":"Gallery"}
             </Link>
@@ -91,7 +92,7 @@ const NavBar = ({language, changeLanguage}) => {
               smooth={true}
               offset={-100}
               duration={800}
-              className="font-bold cursor-pointer"
+              className="font-semibold cursor-pointer"
             >
               {language==="Telugu" ? "కాంటాక్ట్":"Contact"}
             </Link>
@@ -106,9 +107,9 @@ const NavBar = ({language, changeLanguage}) => {
         )}
       </div>
       {showMenu && (
-        <div className="absolute right-0 top-12 w-full z-10">
-          <ul className="flex flex-col justify-end  items-center bg-white lg:hidden p-4 mt-4 ">
-            <li className="my-3 cursor-pointer px-4  flex" onClick={handleMenu}>
+        <div className="absolute right-0 top-20 w-full z-10">
+          <ul className="flex flex-col items-center gap-12 bg-white lg:hidden p-4 mt-4 min-h-screen">
+            <li className="my-3 cursor-pointer px-4 flex" onClick={handleMenu}>
               <Link
                 activeClass="active"
                 to="hero"
@@ -116,10 +117,10 @@ const NavBar = ({language, changeLanguage}) => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="font-bold"
+                className="font-semibold text-xl"
                 onClick={handleMenu}
               >
-                Home
+                {language==="Telugu" ? "హోమ్":"Home"}
               </Link>
             </li>
             <li
@@ -133,10 +134,10 @@ const NavBar = ({language, changeLanguage}) => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="font-bold"
+                className="font-semibold text-xl"
                 onClick={handleMenu}
               >
-                About
+                {language==="Telugu" ? "అబౌట్":"About"}
               </Link>
             </li>
             <li
@@ -151,9 +152,9 @@ const NavBar = ({language, changeLanguage}) => {
                 offset={-100}
                 duration={500}
                 onClick={handleMenu}
-                className="font-bold"
+                className="font-semibold text-xl"
               >
-                Donations
+                {language==="Telugu" ? "విరాళాలు":"Donations"}
               </Link>
             </li>
             <li
@@ -167,10 +168,10 @@ const NavBar = ({language, changeLanguage}) => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="font-bold"
+                className="font-semibold text-xl"
                 onClick={handleMenu}
               >
-                Gallery
+                {language==="Telugu" ? "గ్యాలరీ":"Gallery"}
               </Link>
             </li>
             <li
@@ -184,10 +185,10 @@ const NavBar = ({language, changeLanguage}) => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="font-bold"
+                className="font-semibold text-xl"
                 onClick={handleMenu}
               >
-                Contact
+                {language==="Telugu" ? "కాంటాక్ట్":"Contact"}
               </Link>
             </li>
           </ul>

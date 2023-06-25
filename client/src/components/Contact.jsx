@@ -1,7 +1,7 @@
 import { IoLocationSharp } from "react-icons/io5";
-import {FaPhoneAlt} from "react-icons/fa"
-import {GrMail} from "react-icons/gr"
-const Contact = ({language}) => {
+import { FaPhoneAlt } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+const Contact = ({ language }) => {
   return (
     <div
       className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:items-center px-4 md:px-10 gap-6"
@@ -15,18 +15,32 @@ const Contact = ({language}) => {
         {/* Address */}
         <div className=" flex gap-2">
           <IoLocationSharp className="text-7xl inline-block  ml-1 md:text-5xl" />
-          <p className="inline text-lg">
-            {language === "Telugu" ? "కోటి లింగాల శ్రీ మహాకాళీ సహిత శ్రీ మహా కాళేశ్వర స్వామి వారి దేవస్థానం, వేమవరం , ఫిరంగిపురం మండలం , గుంటూరు జిల్లా , ఆంధ్రప్రదేశ్ , భారతదేశం - 522529." : "Koti Lingala Sri MahaKali Sahitha Sri Maha Kaleswara Swamy Vari Devasthanam, VemaVaram , PhirangiPuram Mandal , Guntur District , Andhra Pradesh , India - 522529."}
+          <p className="inline text-lg leading-loose">
+            {language === "Telugu"
+              ? "కోటి లింగాల శ్రీ మహాకాళి సహిత శ్రీ మహా కాళేశ్వర స్వామి క్షేత్రం, వేమవరం , ఫిరంగిపురం మండలం , గుంటూరు జిల్లా , ఆంధ్రప్రదేశ్ , భారతదేశం - 522529."
+              : "Koti Lingala Sri MahaKali Sahitha Sri Maha Kaleswara Swamy kshetram, VemaVaram , PhirangiPuram Mandal , Guntur District , Andhra Pradesh , India - 522529."}
           </p>
         </div>
         <div className="flex gap-4 items-center ">
           <FaPhoneAlt className="text-xl ml-2" />
-          <a href="tel:+919885185082" className="text-lg">+91 9885185082</a>
+          <div className="flex flex-col gap-2">
+            <a href="tel:+919949888171" className="text-lg">
+              +91 9949888171,
+            </a>
+            <a href="tel:+919441545885" className="text-lg">
+              +91 9441545885,
+            </a>
+            <a href="tel:+919885185082" className="text-lg">
+              +91 9885185082
+            </a>
+          </div>
         </div>
-        <div className="flex gap-4 items-center ">
-          <GrMail className="text-2xl ml-2" />
-          <a href="mailto:testmail@gmail.com" className="text-lg">testmail@gmail.com</a>
-        </div>
+          <a
+            href="mailto:kotilingalamahakaleswara@gmail.com"
+            className="text-lg flex md:gap-4"
+          >
+           <GrMail className="text-2xl ml-2" /> kotilingalamahakaleswara@gmail.com
+          </a>
       </div>
       {/* google maps div */}
       <div className="p-4">

@@ -1,81 +1,34 @@
 import "react-multi-carousel/lib/styles.css";
-import { BsFillCircleFill } from "react-icons/bs";
 
-const Donation = ({language}) => {
+const Donation = ({ language }) => {
   return (
-    <div className="mt-4 lg:grid lg:grid-cols-2 items-center" id="donations">
-      <div className="p-6 md:p-10">
-        <div className="flex justify-center">
-          <video src="donation/temple.mp4" alt="temple video" autoPlay={true} muted loop />
+    <>
+      <h2 className="text-red-800 font-bold text-4xl text-center">
+        {language === "Telugu" ? "విరాళం" : "Donation"}
+      </h2>
+      <div className="mt-4 lg:grid lg:grid-cols-2 items-center" id="donations">
+        <div className="p-6 md:p-10">
+          <div className="flex justify-center">
+            <video
+              src="donation/temple.mp4"
+              alt="temple video"
+              autoPlay={true}
+              muted
+              loop
+            />
+          </div>
+        </div>
+        <div className="flex justify-center flex-col">
+          <p className="px-6 py-4  font-medium text-center leading-loose">
+            {language === "Telugu"
+              ? `షుమారు మూడు దశాబ్దాలుగా నిస్వార్థంగా సేవలందిస్తున్న అమ్మ ఛారిటబుల్ ట్రస్ట్, గుంటూరు బాబా గారి ఆశీస్సులతో వారి సేవకులు కొంతమంది కలిసి గుంటూరు జిల్లా, ఫిరంగిపురం మండలం, వేమవరం గ్రామంలో  కోటి లింగాల క్షేత్రాన్ని నిర్మించాలని సంకల్పించి శంకుస్థాపన కాబడి, నిర్మాణం జరుగుతూ ఉంది.
+          ఈ క్షేత్రంలో 101 అడుగుల ఎత్తు గల రాతి శివలింగం, 33 అడుగులు ఎత్తు, 50 అడుగులు పొడవు గల అతి సుందరమైన నంది, దాదాపు 200 కిలోల బరువు గల మరకత శివలింగం, నాగ సాధువలచే ప్రతిష్టించిన బ్రహ్మసూత్రం గల 500 సం॥ల పురాతన నల్లరాతి శివలింగం, భక్తులు స్వయంగా అభిషేకించుకునేవిధంగా 108 శ్రీ చక్రాల మందిరం, 10 వేల ఏకశిల పాలరాతి శివలింగాలతో శివుని మందిరం భూగర్భంలో దాదాపు నాలుగు అంతస్థుల లోతులో పాతాల కాళి అమ్మవారి మందిరం, కోటి లింగాలు నిర్మాణం జరుగుతూ ఉంది .`
+              : `Amma Charitable Trust, which has been serving selflessly for about three decades, with the blessings of Guntur Baba, some of their servants decided to build a crore linga field in Vemavaram village, Guntur district, Firangipuram mandal, and the foundation stone was laid and the construction is underway.The temple has 101 feet high stone Shivalinga, 33 feet high, 50 feet long beautiful Nandi, nearly 200 kg emerald Shivalinga, 
+          500 years old black stone Shivalinga with Brahmasutra installed by Naga saints, 108 Sri Chakra mandirs where devotees can anoint themselves, With 10,000 monolithic marble Shiva lingams, the temple of Lord Shiva is under construction at a depth of about four storeys.`}
+          </p>
         </div>
       </div>
-      <div className="flex justify-center flex-col">
-        <h2 className="text-red-800 font-bold text-4xl text-center">
-          {language === "Telugu" ? "విరాళం" : "Donation"}
-        </h2>
-        <p className="px-8 py-4 md:text-lg text-center">
-          {language === "Telugu" ? "సమాజానికి సేవ చేయడం మరియు ఆధ్యాత్మిక వృద్ధిని పెంపొందించడం అనే మా మిషన్‌ను కొనసాగించడంలో మాకు సహాయపడండి. మీ విరాళాలు ఆలయ నిర్వహణలో, ఈవెంట్‌లను నిర్వహించడంలో మరియు ధార్మిక కార్యక్రమాలకు మద్దతు ఇవ్వడంలో మార్పును కలిగిస్తాయి." : 
-          `Help us continue our mission of serving the community and fostering
-          spiritual growth. Your donations make a difference in maintaining the
-          temple, organizing events, and supporting charitable initiatives.`}
-        </p>
-        <ul className="flex justify-center flex-col mx-7 my-4 md:mx-10">
-          <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14} />
-            {language === "Telugu" ? "ఆలయ ప్రాంగణాన్ని నిర్వహించండి." : "Maintain the temple premises."}
-          </li>
-          <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14} />
-            {language === "Telugu" ? "మతపరమైన వేడుకలు మరియు పండుగలను నిర్వహించండి." : "Organize religious ceremonies and festivals."}
-          </li>
-          <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14} />
-            {language === "Telugu" ? "ఆధ్యాత్మిక అభివృద్ధి కోసం విద్యా కార్యక్రమాలను అందించండి." : "Offer educational programs for spiritual growth."}
-          </li>
-          <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14} />
-            {language === "Telugu" ? "కమ్యూనిటీ ఔట్రీచ్ కార్యక్రమాలకు మద్దతు ఇవ్వండి." : "Support community outreach initiatives."}
-          </li>
-          <li className="mt-2  items-center">
-            <BsFillCircleFill className="inline mr-2" size={14} />
-            {language === "Telugu" ? "ఆలయ అనుభవాన్ని మెరుగుపరచండి." : "Enhance the temple experience."}
-          </li>
-        </ul>
-      </div>
-      <section className='col-span-2'>
-        <p className='font-semibold text-red-800 text-3xl md:text-4xl text-center'>{language==="Telugu" ? "విరాళం వివరాలు":"Donation Details"}</p>
-        <div className='flex flex-col mx-4 md:mx-0 lg:flex-row items-center justify-center gap-10'>
-          {/* QR div */}
-          <div className='lg:w-1/2 flex flex-col p-7 items-center justify-center gap-6 md:p-10'>
-              <p className='font-semibold text-xl'>
-              {language==="Telugu" ? "విరాళం ఇవ్వడానికి QR కోడ్‌ని స్కాన్ చేయండి" : "Scan the QR Code to donate"}
-              </p>
-              <img src="QR-Code.jpg" alt="qr code" className='md:w-80 md:h-80 lg:w-64 lg:h-64'/>
-          </div>
-          <div className='lg:w-1/2 mx-4 md:mx-0 flex flex-col gap-6'>
-              <p className='font-bold text-xl'>
-                {language==="Telugu" ? "దిగువ బ్యాంక్ వివరాలను ఉపయోగించి విరాళం ఇవ్వండి":"Donate using below Bank Details"}
-              </p>
-              <div>
-                  <label className='font-normal text-xl md:text-2xl'>{language==="Telugu" ? "బ్యాంక్ పేరు":"Bank Name"}: </label>
-                  <span className='text-lg font-bold'>Union Bank of India</span>
-              </div>
-              <div>
-                  <label className='font-normal text-xl md:text-2xl'>{language==="Telugu" ? "ఖాతా సంఖ్య":"Account Number"}: </label>
-                  <span className='text-lg font-bold'>510101003887986</span>
-              </div>
-              <div>
-                  <label className='font-normal text-xl md:text-2xl'>{language==="Telugu" ? "IFSC కోడ్":"IFSC Code"}: </label>
-                  <span className='text-lg font-bold'>UBIN0901504</span>
-              </div>
-              {/* <div>
-                  <label className='font-normal text-2xl'>UPI Number : </label>
-                  <span className='text-lg font-bold'>9346160711</span>
-              </div> */}
-            </div>
-          </div>
-        </section>
-    </div>
+    </>
   );
 };
 
