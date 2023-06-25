@@ -1,8 +1,19 @@
 import "react-multi-carousel/lib/styles.css";
-
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 const Donation = ({ language }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <>
+    <div ref={ref}>
+      <span
+      style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        
+        transition: "all 1.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+    >
       <h2 className="text-red-800 font-bold text-4xl text-center">
         {language === "Telugu" ? "విరాళం" : "Donation"}
       </h2>
@@ -28,7 +39,8 @@ const Donation = ({ language }) => {
           </p>
         </div>
       </div>
-    </>
+      </span>
+    </div>
   );
 };
 
