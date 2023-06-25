@@ -30,6 +30,7 @@ const Home = () => {
         <Hero />
         <About language={language} />
         <Donation language={language} />
+        <DonationDetails language={language}/>
         <Gallery language={language} />
         <Committee language={language} />
         <Contact language={language} />
